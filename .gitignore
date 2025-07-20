@@ -1,0 +1,60 @@
+# ===================================================================
+#  .gitignore for Vivado, Python, and general development
+# ===================================================================
+
+# --- Vivado/Xilinx Specific ---
+# Ignore the entire project directory created by Vivado
+*.xpr
+*.xci
+*.xise
+*.cache/
+*.gen/
+*.runs/
+*.srcs/
+*.sdk/
+*.sw/
+*.hw/
+*.ip_user_files/
+.Xil/
+webtalk*.log
+webtalk*.jou
+xelab.log
+xelab.pb
+xsim.dir/
+xsim.log
+xsim.pb
+xvlog.log
+xvlog.pb
+vivado.log
+vivado.jou
+vivado_*.backup.jou
+vivado_*.backup.log
+vivado_pid*.str
+vivado_pid*.zip
+
+# --- Simulation & Data Files ---
+# Ignore generated memory files, as they are created by the script
+*.mem
+*.wdb
+*.wcfg
+
+# --- Python Specific ---
+# Ignore virtual environments
+venv/
+/venv/
+.venv/
+/.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- General ---
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# --- Build & Output directories ---
+build/
+dist/
+*.egg-info/
